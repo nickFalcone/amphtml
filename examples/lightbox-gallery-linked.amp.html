@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html ⚡>
+  <head>
+    <meta charset="utf-8">
+    <link rel="canonical" href="https://amp.dev/documentation/examples/components/amp-lightbox-gallery/index.html">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <title>amp-lightbox-gallery linked</title>
+    <script async custom-element="amp-lightbox-gallery" src="https://cdn.ampproject.org/v0/amp-lightbox-gallery-0.1.js"></script>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <style amp-custom>
+      .item{
+        width: 184px;
+        height: 139px;
+      }
+      .flex-wrapper{
+        display: flex;
+      }
+	  .lightbox-galleri{
+		display:none;
+	  }
+    </style>
+  </head>
+  <body>
+    <h2>AMP lightbox linked gallery</h2>
+    <p>Copied from <a href="https://codepen.io/sunturion/pen/eYvRxKY">Codepen</a> to test <a href="https://github.com/ampproject/amphtml/issues/34556">Issue #34556</a></p>
+    <p>To reproduce:</p>
+    <ol>
+      <li>Click any image</li>
+      <li>Close gallery</li>
+      <li>Click a different image</li>
+      <li>Note that the original image from step 1 is displayed</li>
+    </ol>
+  
+    <div class="flex-wrapper">
+      <div class="item">
+        <amp-img src="https://picsum.photos/id/237/184/139" width="184" height="139" layout="responsive" on="tap:amp-lightbox-gallery.open(id='cncFraesning1')" tabindex="1" role="button"></amp-img>
+      </div>
+      <div class="item">
+        <amp-img src="https://picsum.photos/id/238/184/139" width="184" height="139" layout="responsive" on="tap:amp-lightbox-gallery.open(id='cncFraesning2')" tabindex="1" role="button"></amp-img>
+      </div>
+      <div class="item">
+        <amp-img src="https://picsum.photos/id/239/184/139" width="184" height="139" layout="responsive" on="tap:amp-lightbox-gallery.open(id='cncFraesning3')" tabindex="1" role="button"></amp-img>
+      </div>
+      <div class="item">
+        <amp-img src="https://picsum.photos/id/240/184/139" width="184" height="139" layout="responsive" on="tap:amp-lightbox-gallery.open(id='cncFraesning4')" tabindex="1" role="button"></amp-img>
+      </div>
+      <div class="item">
+        <amp-img src="https://picsum.photos/id/241/184/139" width="184" height="139" layout="responsive" on="tap:amp-lightbox-gallery.open(id='cncFraesning5')" tabindex="1" role="button"></amp-img>
+      </div>
+      <div class="item">
+        <amp-img src="https://picsum.photos/id/242/184/139" width="184" height="139" layout="responsive" on="tap:amp-lightbox-gallery.open(id='cncFraesning6')" tabindex="1" role="button"></amp-img>
+      </div>
+      <div class="item">
+        <amp-img src="https://picsum.photos/id/243/184/139" width="184" height="139" layout="responsive" on="tap:amp-lightbox-gallery.open(id='cncFraesning7')" tabindex="1" role="button"></amp-img>
+      </div>
+      <div class="item">
+        <amp-img src="https://picsum.photos/id/244/184/139" width="184" height="139" layout="responsive" on="tap:amp-lightbox-gallery.open(id='cncFraesning8')" tabindex="1" role="button"></amp-img>
+      </div>
+    </div>
+    
+    <div class="lightbox-galleri">
+      <amp-img src="https://picsum.photos/id/237/1224/689" width="1224" height="689" layout="responsive" lightbox="fraesning" id="cncFraesning1"></amp-img>
+      <amp-img src="https://picsum.photos/id/238/1224/689" width="1224" height="689" layout="responsive" lightbox="fraesning" id="cncFraesning2"></amp-img>
+      <amp-img src="https://picsum.photos/id/239/1224/689" width="1224" height="689" layout="responsive" lightbox="fraesning" id="cncFraesning3"></amp-img>
+      <amp-img src="https://picsum.photos/id/240/1224/689" width="1224" height="689" layout="responsive" lightbox="fraesning" id="cncFraesning4"></amp-img>
+      <amp-img src="https://picsum.photos/id/241/1224/689" width="1224" height="689" layout="responsive" lightbox="fraesning" id="cncFraesning5"></amp-img>
+      <amp-img src="https://picsum.photos/id/242/1224/689" width="1224" height="689" layout="responsive" lightbox="fraesning" id="cncFraesning6"></amp-img>
+      <amp-img src="https://picsum.photos/id/243/1224/689" width="1224" height="689" layout="responsive" lightbox="fraesning" id="cncFraesning7"></amp-img>
+      <amp-img src="https://picsum.photos/id/244/1224/689" width="1224" height="689" layout="responsive" lightbox="fraesning" id="cncFraesning8"></amp-img>
+    </div>
+  
+  </body>
+</html>
